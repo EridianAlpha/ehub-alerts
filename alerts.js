@@ -19,6 +19,8 @@ async function monitorAlerts() {
     const dbAlertsConfig = database.collection("alertsConfig")
     const dbAlerts = database.collection("alerts")
 
+    console.log("Starting alert checks at:", new Date())
+
     // Since only one health check ping is sent, the whole process is wrapped in a try-finally block
     // so if even a single alert check fails, the health check ping is not sent.
     try {
