@@ -1,3 +1,6 @@
+# logs
+alerts.log
+
 # dependencies
 /node_modules
 
